@@ -69,8 +69,8 @@ subtype : 过渡动画的动画方向<br>
 - kCATransitionFromLeft    从左侧进入
 - kCATransitionFromTop  从顶部进入
 - kCATransitionFromBottom  从底部进入<br>
-![这里写图片描述](http://img.blog.csdn.net/20170406110553044?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjY1OTgwNzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
-##三、Core Animation使用
+![这里写图片描述](http://img.blog.csdn.net/20170406110553044?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjY1OTgwNzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)<br>
+## 三、Core Animation使用
 ####3.1：位移动画（CABaseAnimation）
 **重要属性**<br>
 **fromValue** ： keyPath对应的初始值<br>
