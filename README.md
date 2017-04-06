@@ -71,7 +71,7 @@ subtype : 过渡动画的动画方向<br>
 - kCATransitionFromBottom  从底部进入<br>
 ![这里写图片描述](http://img.blog.csdn.net/20170406110553044?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjY1OTgwNzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)<br>
 ## 三、Core Animation使用
-####3.1：位移动画（CABaseAnimation）
+#### 3.1：位移动画（CABaseAnimation）<br>
 **重要属性**<br>
 **fromValue** ： keyPath对应的初始值<br>
 **toValue** ： keyPath对应的结束值<br/>
@@ -90,10 +90,10 @@ anima.duration = 1.0f;
 anima.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
 [_wsView.layer addAnimation:anima forKey:@"positionAnimation"];
 ```
-**注意点**
+**注意点:**
 如果fillMode=kCAFillModeForwards和removedOnComletion=NO，那么在动画执行完毕后，图层会保持显示动画执行后的状态。但在实质上，图层的属性值还是动画执行前的初始值，并没有真正被改变。
 
-####3.2：透明度动画（CABaseAnimation）
+#### 3.2：透明度动画（CABaseAnimation）
 ![这里写图片描述](http://img.blog.csdn.net/20170406112056252?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjY1OTgwNzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ```
 //使用CABasicAnimation创建基础动画
@@ -105,7 +105,7 @@ anima.duration = 1.0f;
 
 ```
 
-####3.3：缩放动画（CABaseAnimation）
+#### 3.3：缩放动画（CABaseAnimation）
 ![这里写图片描述](http://img.blog.csdn.net/20170406112423210?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjY1OTgwNzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ```
 //整体缩放
@@ -129,7 +129,7 @@ anima.duration = 1.0f;
 
 ```
 
-####3.4：旋转动画（CABaseAnimation && CAKeyframeAnimation）
+#### 3.4：旋转动画（CABaseAnimation && CAKeyframeAnimation）
 ![这里写图片描述](http://img.blog.csdn.net/20170406112555225?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjY1OTgwNzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ```
 //绕着z轴为矢量，进行旋转
@@ -161,7 +161,7 @@ anima.repeatCount = MAXFLOAT;
 
 ```
 
-####3.5：背景颜色变换动画（CABaseAnimation）
+#### 3.5：背景颜色变换动画（CABaseAnimation）
 ![这里写图片描述](http://img.blog.csdn.net/20170406112947000?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjY1OTgwNzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ```
 CABasicAnimation *anima = [CABasicAnimation animationWithKeyPath:@"backgroundColor"];
@@ -170,7 +170,7 @@ anima.duration = 2.0f;
 [_wsView.layer addAnimation:anima forKey:@"backgroundAnimation"];
 ```
 
-####3.6：圆角变换动画（CABaseAnimation）
+#### 3.6：圆角变换动画（CABaseAnimation）
 ![这里写图片描述](http://img.blog.csdn.net/20170406113136565?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjY1OTgwNzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ```
 //变换圆角
@@ -190,7 +190,7 @@ anima.removedOnCompletion = NO;
 [_wsView.layer addAnimation:anima forKey:@"cornerRadius"];
 ```
 
-####3.7：切换图片动画（CABaseAnimation）
+#### 3.7：切换图片动画（CABaseAnimation）
 ![这里写图片描述](http://img.blog.csdn.net/20170406113316536?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjY1OTgwNzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ```
 //动画切换图标
@@ -207,7 +207,7 @@ transition.type = kCATransitionFade;
 
 ```
 
-####3.8：阴影颜色动画（CABaseAnimation）
+#### 3.8：阴影颜色动画（CABaseAnimation）
 ![这里写图片描述](http://img.blog.csdn.net/20170406113425819?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjY1OTgwNzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ```
 //使用CABasicAnimation创建基础动画
@@ -219,7 +219,7 @@ anima.duration = 1.0f;
 
 ```
 
-####3.9：组动画（CABaseAnimation）
+#### 3.9：组动画（CABaseAnimation）
 ![这里写图片描述](http://img.blog.csdn.net/20170406121115905?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjY1OTgwNzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ```
 //同时进行的组动画（平移，放大，旋转）
@@ -278,7 +278,7 @@ anima3.removedOnCompletion = NO;
 
 ```
 
-####3.10：转场动画（CATransition）
+#### 3.10：转场动画（CATransition）
 ![这里写图片描述](http://img.blog.csdn.net/20170406121434829?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjY1OTgwNzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ```
 -(void)fadeAnimation{
