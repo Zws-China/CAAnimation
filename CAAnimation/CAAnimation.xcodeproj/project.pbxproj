@@ -24,6 +24,7 @@
 		8814BE4A1E94EF2E000BA16B /* Base888Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 8814BE491E94EF2E000BA16B /* Base888Controller.m */; };
 		8814BE4D1E94EF38000BA16B /* Base999Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 8814BE4C1E94EF38000BA16B /* Base999Controller.m */; };
 		8814BE5A1E94FABE000BA16B /* TransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8814BE591E94FABE000BA16B /* TransitionController.m */; };
+		8850AAD51E95D7A2002101BB /* UIViewAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8850AAD41E95D7A2002101BB /* UIViewAnimationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,8 @@
 		8814BE4C1E94EF38000BA16B /* Base999Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base999Controller.m; sourceTree = "<group>"; };
 		8814BE581E94FABE000BA16B /* TransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionController.h; sourceTree = "<group>"; };
 		8814BE591E94FABE000BA16B /* TransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionController.m; sourceTree = "<group>"; };
+		8850AAD31E95D7A2002101BB /* UIViewAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAnimationController.h; sourceTree = "<group>"; };
+		8850AAD41E95D7A2002101BB /* UIViewAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAnimationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,7 @@
 				8814BE281E94CC33000BA16B /* 基本动画 */,
 				8814BE381E94E12C000BA16B /* 组动画 */,
 				8814BE571E94FA4C000BA16B /* 转场动画 */,
+				8850AAD21E95D78F002101BB /* UIView+Animation */,
 				8814BE191E94C57F000BA16B /* Main.storyboard */,
 				8814BE1C1E94C57F000BA16B /* Assets.xcassets */,
 				8814BE1E1E94C57F000BA16B /* LaunchScreen.storyboard */,
@@ -159,6 +163,15 @@
 				8814BE591E94FABE000BA16B /* TransitionController.m */,
 			);
 			path = "转场动画";
+			sourceTree = "<group>";
+		};
+		8850AAD21E95D78F002101BB /* UIView+Animation */ = {
+			isa = PBXGroup;
+			children = (
+				8850AAD31E95D7A2002101BB /* UIViewAnimationController.h */,
+				8850AAD41E95D7A2002101BB /* UIViewAnimationController.m */,
+			);
+			path = "UIView+Animation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +246,7 @@
 			files = (
 				8814BE2B1E94CC6F000BA16B /* Base111Controller.m in Sources */,
 				8814BE2E1E94CC7F000BA16B /* Base222Controller.m in Sources */,
+				8850AAD51E95D7A2002101BB /* UIViewAnimationController.m in Sources */,
 				8814BE311E94CC92000BA16B /* Base333Controller.m in Sources */,
 				8814BE341E94DD75000BA16B /* Base444Controller.m in Sources */,
 				8814BE4D1E94EF38000BA16B /* Base999Controller.m in Sources */,
@@ -397,6 +411,7 @@
 				8814BE261E94C57F000BA16B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

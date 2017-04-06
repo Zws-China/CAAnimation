@@ -19,6 +19,10 @@
 
 #import "Group111Controller.h"
 
+#import "TransitionController.h"
+
+#import "UIViewAnimationController.h"
+
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -42,7 +46,7 @@
     self.view.backgroundColor = [UIColor lightGrayColor];
     self.navigationItem.title = @"Animation动画";
 
-    _dataArr = @[@[@"位移(position)",@"透明度(opacity)",@"缩放(scale)",@"旋转(rotation)",@"背景颜色变换(backgroundColor)",@"圆角(cornerRadius)",@"切换图片",@"边框宽(borderWidth)",@"边框颜色(borderColor)"],@[@"组动画"],@[@"223ee",@"2ee"],@[@"1dsas",@"2asda"]];
+    _dataArr = @[@[@"位移(position)",@"透明度(opacity)",@"缩放(scale)",@"旋转(rotation)",@"背景颜色变换(backgroundColor)",@"圆角(cornerRadius)",@"切换图片",@"边框宽(borderWidth)",@"阴影颜色(shadowColor)"],@[@"组动画"],@[@"转场动画"],@[@"UIView+Animation"]];
 
     
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStyleGrouped];
@@ -147,20 +151,32 @@
             break;
         case 2:
         {
-            
+            switch (indexPath.row) {
+                case 0:
+                {
+                    viewController = [[TransitionController alloc] init];
+                }
+                    break;
+                default:
+                    break;
+            }
         }
             break;
         case 3:
         {
-            
+            switch (indexPath.row) {
+                case 0:
+                {
+                    viewController = [[UIViewAnimationController alloc] init];
+                }
+                    break;
+                default:
+                    break;
+            }
+
         }
             break;
-        case 4:
-        {
-            
-        }
-            break;
-            
+                    
         default:
             break;
     }
