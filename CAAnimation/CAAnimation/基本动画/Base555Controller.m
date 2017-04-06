@@ -38,7 +38,7 @@
     btn.frame = CGRectMake(100, kScreenHeight - 100, kScreenWidth-200, 40);
     btn.layer.cornerRadius = 5;
     btn.backgroundColor = [UIColor lightGrayColor];
-    [btn setTitle:@"变换背景图" forState:UIControlStateNormal];
+    [btn setTitle:@"变换背景颜色" forState:UIControlStateNormal];
     [self.view addSubview:btn];
     [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
     
