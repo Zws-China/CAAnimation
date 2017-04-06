@@ -6,13 +6,13 @@ iOS动画演示，核心动画演示，CAAnimation动画
 ####github下载地址：[https://github.com/Zws-China/CAAnimation](https://github.com/Zws-China/CAAnimation)<br/>
 如果觉得对你还有些用，给一颗star吧。你的支持是我继续的动力。<br/>
 
-##一、简介
+## 一、简介
 IOS 动画主要是指Core Animation框架。官方使用文档地址为：[CoreAnimation官方使用文档](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html)。<br/>Core Animation是IOS和OS X平台上负责图形渲染与动画的基础框架。Core Animation可以作用与动画视图或者其他可视元素，为你完成了动画所需的大部分绘帧工作。你只需要配置少量的动画参数（如开始点的位置和结束点的位置）即可使用Core Animation的动画效果。Core Animation将大部分实际的绘图任务交给了图形硬件来处理，图形硬件会加速图形渲染的速度。这种自动化的图形加速技术让动画拥有更高的帧率并且显示效果更加平滑，不会加重CPU的负担而影响程序的运行速度。
 
-##二、Core Animation类的继承关系图
+## 二、Core Animation类的继承关系图
 ![coreAnimation.png](http://img.my.csdn.net/uploads/201507/23/1437617562_3190.png)
 
-##animationwithkeypath有哪些值
+## animationwithkeypath有哪些值
 transform.scale = 比例缩放<br>
 transform.scale.x = 宽的比例缩放<br>
 transform.scale.y = 高的比例缩放<br>
@@ -68,7 +68,7 @@ subtype : 过渡动画的动画方向<br>
 - kCATransitionFromRight   从右侧进入
 - kCATransitionFromLeft    从左侧进入
 - kCATransitionFromTop  从顶部进入
-- kCATransitionFromBottom  从底部进入
+- kCATransitionFromBottom  从底部进入<br>
 ![这里写图片描述](http://img.blog.csdn.net/20170406110553044?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjY1OTgwNzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ##三、Core Animation使用
 ####3.1：位移动画（CABaseAnimation）
