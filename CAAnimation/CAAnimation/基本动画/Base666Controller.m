@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor lightGrayColor];
     
     
     [self initUI];
@@ -30,6 +30,7 @@
     
     _wsView = [[UIImageView alloc] initWithFrame:CGRectMake(kScreenWidth/2-80, kScreenHeight/2-80,160 ,160 )];
     _wsView.image = [UIImage imageNamed:@"img1"];
+    _wsView.layer.masksToBounds = YES;
     [self.view addSubview:_wsView];
     
     NSArray *titleArr = @[@"变换圆角",@"恢复直角"];
