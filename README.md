@@ -46,7 +46,7 @@ timingFunction : 控制动画的显示节奏系统提供五种值选择，分别
 
 - kCAMediaTimingFunctionLinear 线性动画
 - kCAMediaTimingFunctionEaseIn 先慢后快（慢进快出）
-- kCAMediaTimingFunctionEaseOut 先块后慢（快进慢出）
+- kCAMediaTimingFunctionEaseOut 先快后慢（快进慢出）
 - kCAMediaTimingFunctionEaseInEaseOut 先慢后快再慢
 - kCAMediaTimingFunctionDefault 默认，也属于中间比较快
 
